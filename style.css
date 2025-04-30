@@ -112,6 +112,13 @@ h2 {
   filter: drop-shadow(0 0 10px #d4af37aa);
   transition: transform 0.3s ease;
 }
+@media (max-width: 600px) {
+  .perfume-img {
+    margin-bottom: 30px;
+    width: 120px;
+  }
+}
+
 
 .perfume-img:hover {
   transform: scale(1.05);
