@@ -1,0 +1,118 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a; /* Matte black */
+  color: #f1f1f1;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Main Container */
+.invitation-container {
+  max-width: 700px;
+  background: #101010;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.05);
+  text-align: center;
+  position: relative;
+}
+
+/* Gold Line */
+.gold-line-top,
+.gold-line-bottom {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #d4af37, transparent);
+  border: none;
+  margin: 20px 0;
+}
+
+/* Header Titles */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #d4af37; /* Gold */
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #d3d3d3; /* lighter silver */
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px #999;
+}
+
+/* Event Details */
+.event-details p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.event-details strong {
+  color: #c0c0c0; /* Silver*/
+  text-shadow: 0 0 3px #888;
+}
+
+.description {
+  margin-top: 20px;
+  font-style: italic;
+  color: #cccccc;
+}
+
+/* RSVP Button */
+.rsvp-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #d4af37;
+  color: #0a0a0a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.rsvp-button:hover {
+  background-color: #ffd700;
+  box-shadow: 0 0 10px #ffd70088;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .event-details p {
+    font-size: 16px;
+  }
+
+  .rsvp-button {
+    padding: 10px 20px;
+  }
+}
+.perfume-img {
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px #d4af37aa);
+  transition: transform 0.3s ease;
+}
+
+.perfume-img:hover {
+  transform: scale(1.05);
+}
